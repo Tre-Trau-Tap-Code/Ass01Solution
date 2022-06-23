@@ -8,23 +8,23 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\dieuq\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\LONG\\.nuget\\packages\\": {},
+    "E:\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FPT U\\CN5\\PRN - .NET\\Workspaces\\Ass01Solution\\BusinessObject\\BusinessObject.csproj",
+      "projectUniqueName": "D:\\C#\\Ass01Solution\\BusinessObject\\BusinessObject.csproj",
       "projectName": "BusinessObject",
-      "projectPath": "D:\\FPT U\\CN5\\PRN - .NET\\Workspaces\\Ass01Solution\\BusinessObject\\BusinessObject.csproj",
-      "packagesPath": "C:\\Users\\dieuq\\.nuget\\packages\\",
-      "outputPath": "D:\\FPT U\\CN5\\PRN - .NET\\Workspaces\\Ass01Solution\\BusinessObject\\obj\\",
+      "projectPath": "D:\\C#\\Ass01Solution\\BusinessObject\\BusinessObject.csproj",
+      "packagesPath": "C:\\Users\\LONG\\.nuget\\packages\\",
+      "outputPath": "D:\\C#\\Ass01Solution\\BusinessObject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "E:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\dieuq\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LONG\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -65,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

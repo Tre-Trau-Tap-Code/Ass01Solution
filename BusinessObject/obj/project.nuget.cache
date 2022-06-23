@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lwbo5Ck4aGX3QtL+dXITicFJ82VfPGyVeQCrpkfMPJNWyZ3yvE0+qOQKX4W1H6zR4NXVQYncJfLsbea0lThTtQ==",
+  "dgSpecHash": "icujqyA7K9OgP1OOGTkKQ0RNg5avlU7Z//gttLuT3SzUpO2IYAaz6j9JdnoLkGYIIbUwHjsFV+ImCb54CFJUVg==",
   "success": true,
-  "projectFilePath": "D:\\FPT U\\CN5\\PRN - .NET\\Workspaces\\Ass01Solution\\BusinessObject\\BusinessObject.csproj",
+  "projectFilePath": "D:\\C#\\Ass01Solution\\BusinessObject\\BusinessObject.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
