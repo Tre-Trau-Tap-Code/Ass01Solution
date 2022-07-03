@@ -44,12 +44,8 @@
             this.txtCity = new System.Windows.Forms.TextBox();
             this.txtCountry = new System.Windows.Forms.TextBox();
             this.lbTotal = new System.Windows.Forms.Label();
-            this.MemberID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MemberName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.City = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Country = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dvgMembers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,14 +79,7 @@
             // dvgMembers
             // 
             this.dvgMembers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvgMembers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MemberID,
-            this.MemberName,
-            this.Password,
-            this.Email,
-            this.City,
-            this.Country});
-            this.dvgMembers.Location = new System.Drawing.Point(12, 164);
+            this.dvgMembers.Location = new System.Drawing.Point(12, 289);
             this.dvgMembers.Name = "dvgMembers";
             this.dvgMembers.ReadOnly = true;
             this.dvgMembers.RowHeadersWidth = 51;
@@ -201,69 +190,30 @@
             this.lbTotal.Size = new System.Drawing.Size(0, 20);
             this.lbTotal.TabIndex = 19;
             // 
-            // MemberID
+            // txtSearch
             // 
-            this.MemberID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.MemberID.DataPropertyName = "MemberID";
-            this.MemberID.HeaderText = "Member ID";
-            this.MemberID.MinimumWidth = 6;
-            this.MemberID.Name = "MemberID";
-            this.MemberID.ReadOnly = true;
-            this.MemberID.Width = 113;
+            this.txtSearch.Location = new System.Drawing.Point(12, 256);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(276, 27);
+            this.txtSearch.TabIndex = 21;
             // 
-            // MemberName
+            // btnSearch
             // 
-            this.MemberName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.MemberName.DataPropertyName = "MemberName";
-            this.MemberName.HeaderText = "Member Name";
-            this.MemberName.MinimumWidth = 6;
-            this.MemberName.Name = "MemberName";
-            this.MemberName.ReadOnly = true;
-            this.MemberName.Width = 138;
-            // 
-            // Password
-            // 
-            this.Password.DataPropertyName = "Password";
-            this.Password.HeaderText = "Password";
-            this.Password.MinimumWidth = 6;
-            this.Password.Name = "Password";
-            this.Password.ReadOnly = true;
-            this.Password.Visible = false;
-            this.Password.Width = 125;
-            // 
-            // Email
-            // 
-            this.Email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Email.DataPropertyName = "Email";
-            this.Email.HeaderText = "Email";
-            this.Email.MinimumWidth = 6;
-            this.Email.Name = "Email";
-            this.Email.ReadOnly = true;
-            this.Email.Width = 75;
-            // 
-            // City
-            // 
-            this.City.DataPropertyName = "City";
-            this.City.HeaderText = "City";
-            this.City.MinimumWidth = 6;
-            this.City.Name = "City";
-            this.City.ReadOnly = true;
-            this.City.Width = 125;
-            // 
-            // Country
-            // 
-            this.Country.DataPropertyName = "Country";
-            this.Country.HeaderText = "Country";
-            this.Country.MinimumWidth = 6;
-            this.Country.Name = "Country";
-            this.Country.ReadOnly = true;
-            this.Country.Width = 125;
+            this.btnSearch.Location = new System.Drawing.Point(294, 255);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(94, 29);
+            this.btnSearch.TabIndex = 22;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // frmMemberManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(789, 450);
+            this.ClientSize = new System.Drawing.Size(789, 565);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.lbTotal);
             this.Controls.Add(this.txtCountry);
             this.Controls.Add(this.txtCity);
@@ -307,11 +257,7 @@
         private TextBox txtCity;
         private TextBox txtCountry;
         private Label lbTotal;
-        private DataGridViewTextBoxColumn MemberID;
-        private DataGridViewTextBoxColumn MemberName;
-        private DataGridViewTextBoxColumn Password;
-        private DataGridViewTextBoxColumn Email;
-        private DataGridViewTextBoxColumn City;
-        private DataGridViewTextBoxColumn Country;
+        private TextBox txtSearch;
+        private Button btnSearch;
     }
 }

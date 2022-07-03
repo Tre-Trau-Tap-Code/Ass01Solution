@@ -37,9 +37,11 @@ D:\C#\Ass01Solution\MyStoreWinApp\bin\Debug\net6.0-windows\DataAccess.dll
 D:\C#\Ass01Solution\MyStoreWinApp\bin\Debug\net6.0-windows\DataAccess.pdb
 D:\C#\Ass01Solution\MyStoreWinApp\bin\Debug\net6.0-windows\BusinessObject.pdb
 D:\C#\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows\MyStoreWinApp.csproj.AssemblyReference.cache
+D:\C#\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows\MyStoreWinApp.ChangePassword.resources
 D:\C#\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows\MyStoreWinApp.CreateMember.resources
 D:\C#\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows\MyStoreWinApp.frmLogin.resources
 D:\C#\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows\MyStoreWinApp.frmMemberManagement.resources
+D:\C#\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows\MyStoreWinApp.MemberDetails.resources
 D:\C#\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows\MyStoreWinApp.csproj.GenerateResource.cache
 D:\C#\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows\MyStoreWinApp.GeneratedMSBuildEditorConfig.editorconfig
 D:\C#\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows\MyStoreWinApp.AssemblyInfoInputs.cache
@@ -51,5 +53,3 @@ D:\C#\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows\refint\MyStoreWinApp.
 D:\C#\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows\MyStoreWinApp.pdb
 D:\C#\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows\MyStoreWinApp.genruntimeconfig.cache
 D:\C#\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows\ref\MyStoreWinApp.dll
-D:\C#\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows\MyStoreWinApp.MemberDetails.resources
-D:\C#\Ass01Solution\MyStoreWinApp\obj\Debug\net6.0-windows\MyStoreWinApp.ChangePassword.resources

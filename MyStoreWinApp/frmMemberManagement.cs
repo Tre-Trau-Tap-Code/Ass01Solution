@@ -16,6 +16,7 @@ namespace MyStoreWinApp
             var members = dao.GetMembers;
 
             source = new BindingSource();
+            members.ForEach(member => member.Password = "*****");
             source.DataSource = members;
 
            
@@ -106,6 +107,57 @@ namespace MyStoreWinApp
             CreateMember createMember = new CreateMember();
             createMember.ShowDialog();
             LoadMembers();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            var members = dao.GetMembers;
+
+            source = new BindingSource();
+
+            var newMember = new List<Member>();
+            try
+            {
+                foreach (var member in members)
+                {
+                    member.Password = "*****";
+                    if (member.MemberID==int.Parse(txtSearch.Text))
+                    {
+                        newMember.Add(member);
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                foreach (var member in members)
+                {
+                    member.Password = "*****";
+                    if (member.MemberName.ToLower().Contains(txtSearch.Text.Trim().ToLower().ToString()))
+                    {
+                        newMember.Add(member);
+                    }
+                }
+            }
+
+            source.DataSource = newMember;
+
+            lbId.DataBindings.Clear();
+            txtMemberName.DataBindings.Clear();
+            txtEmail.DataBindings.Clear();
+            txtCity.DataBindings.Clear();
+            txtCountry.DataBindings.Clear();
+            lbTotal.DataBindings.Clear();
+
+
+            lbId.DataBindings.Add("Text", source, "MemberID");
+            txtMemberName.DataBindings.Add("Text", source, "MemberName");
+            txtEmail.DataBindings.Add("Text", source, "Email");
+            txtCity.DataBindings.Add("Text", source, "City");
+            txtCountry.DataBindings.Add("Text", source, "Country");
+            lbTotal.Text = $"Total: {dao.GetMembers.Count()}";
+
+            dvgMembers.DataSource = null;
+            dvgMembers.DataSource = newMember;
         }
 
         /*private void dvgMembers_CellContentClick(object sender, DataGridViewCellEventArgs e)
