@@ -38,11 +38,6 @@ namespace MyStoreWinApp
             dvgMembers.DataSource = null;
             dvgMembers.DataSource = members;
 
-            /*lbId.Text = string.Empty;
-            txtMemberName.Text = string.Empty;
-            txtEmail.Text = string.Empty;
-            txtCity.Text = string.Empty;
-            txtCountry.Text = string.Empty;*/
         }
         private void frmMemberManagement_Load(object sender, EventArgs e)
         {

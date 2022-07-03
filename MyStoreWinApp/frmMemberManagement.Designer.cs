@@ -41,11 +41,11 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.txtMemberName = new System.Windows.Forms.TextBox();
             this.btnCreate = new System.Windows.Forms.Button();
-            this.txtCity = new System.Windows.Forms.TextBox();
-            this.txtCountry = new System.Windows.Forms.TextBox();
             this.lbTotal = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
+            this.txtCountry = new System.Windows.Forms.ComboBox();
+            this.txtCity = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dvgMembers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -168,20 +168,6 @@
             this.btnCreate.UseVisualStyleBackColor = true;
             this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
-            // txtCity
-            // 
-            this.txtCity.Location = new System.Drawing.Point(525, 21);
-            this.txtCity.Name = "txtCity";
-            this.txtCity.Size = new System.Drawing.Size(252, 27);
-            this.txtCity.TabIndex = 17;
-            // 
-            // txtCountry
-            // 
-            this.txtCountry.Location = new System.Drawing.Point(525, 77);
-            this.txtCountry.Name = "txtCountry";
-            this.txtCountry.Size = new System.Drawing.Size(252, 27);
-            this.txtCountry.TabIndex = 18;
-            // 
             // lbTotal
             // 
             this.lbTotal.AutoSize = true;
@@ -207,16 +193,39 @@
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
+            // txtCountry
+            // 
+            this.txtCountry.FormattingEnabled = true;
+            this.txtCountry.Items.AddRange(new object[] {
+            "Vietnam"});
+            this.txtCountry.Location = new System.Drawing.Point(525, 77);
+            this.txtCountry.Name = "txtCountry";
+            this.txtCountry.Size = new System.Drawing.Size(252, 28);
+            this.txtCountry.TabIndex = 23;
+            // 
+            // txtCity
+            // 
+            this.txtCity.FormattingEnabled = true;
+            this.txtCity.Items.AddRange(new object[] {
+            "Hochiminh",
+            "Hanoi",
+            "Danang",
+            "Camau"});
+            this.txtCity.Location = new System.Drawing.Point(525, 21);
+            this.txtCity.Name = "txtCity";
+            this.txtCity.Size = new System.Drawing.Size(252, 28);
+            this.txtCity.TabIndex = 24;
+            // 
             // frmMemberManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(789, 565);
+            this.Controls.Add(this.txtCity);
+            this.Controls.Add(this.txtCountry);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.lbTotal);
-            this.Controls.Add(this.txtCountry);
-            this.Controls.Add(this.txtCity);
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.txtEmail);
@@ -254,10 +263,10 @@
         private Button btnLogout;
         private TextBox txtMemberName;
         private Button btnCreate;
-        private TextBox txtCity;
-        private TextBox txtCountry;
         private Label lbTotal;
         private TextBox txtSearch;
         private Button btnSearch;
+        private ComboBox txtCountry;
+        private ComboBox txtCity;
     }
 }
