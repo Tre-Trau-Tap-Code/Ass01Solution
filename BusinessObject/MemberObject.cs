@@ -2,11 +2,11 @@
 {
     public class Member
     {
-        int MemberID { get; set; }
-        string MemberName { get; set; }
-        string Email { get; set; }
-        string Password { get; set; }
-        string City { get; set; }
-        string Country { get; set; }
+        public int MemberID { get; set; }
+        public string MemberName { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
+        public string City { get; set; }
+        public string Country { get; set; }
     }
 }
