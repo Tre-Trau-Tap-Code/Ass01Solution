@@ -117,7 +117,7 @@ namespace MyStoreWinApp
                 foreach (var member in members)
                 {
                     member.Password = "*****";
-                    if (member.MemberID==int.Parse(txtSearch.Text) || member.City.Equals(cbCity.Text) || member.Country.Equals(cbCountry.Text))
+                    if (member.MemberID==int.Parse(txtSearch.Text))
                     {
                         newMember.Add(member);
                     }
@@ -128,7 +128,7 @@ namespace MyStoreWinApp
                 foreach (var member in members)
                 {
                     member.Password = "*****";
-                    if (member.City.Equals(cbCity.Text) || member.Country.Equals(cbCountry.Text) || member.MemberName.ToLower().Contains(txtSearch.Text.Trim().ToLower().ToString()))
+                    if (member.City.ToLower().Contains(txtSearch.Text.ToLower()) || member.Country.ToLower().Contains(txtSearch.Text.ToLower()) || member.MemberName.ToLower().Contains(txtSearch.Text.Trim().ToLower().ToString()))
                     {
                         newMember.Add(member);
                     }
