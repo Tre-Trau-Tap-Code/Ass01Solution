@@ -111,12 +111,13 @@ namespace MyStoreWinApp
             source = new BindingSource();
 
             var newMember = new List<Member>();
+            
             try
             {
                 foreach (var member in members)
                 {
                     member.Password = "*****";
-                    if (member.MemberID==int.Parse(txtSearch.Text))
+                    if (member.MemberID==int.Parse(txtSearch.Text) || member.City.Equals(cbCity.Text) || member.Country.Equals(cbCountry.Text))
                     {
                         newMember.Add(member);
                     }
@@ -127,7 +128,7 @@ namespace MyStoreWinApp
                 foreach (var member in members)
                 {
                     member.Password = "*****";
-                    if (member.MemberName.ToLower().Contains(txtSearch.Text.Trim().ToLower().ToString()))
+                    if (member.City.Equals(cbCity.Text) || member.Country.Equals(cbCountry.Text) || member.MemberName.ToLower().Contains(txtSearch.Text.Trim().ToLower().ToString()))
                     {
                         newMember.Add(member);
                     }

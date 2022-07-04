@@ -46,6 +46,8 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtCountry = new System.Windows.Forms.ComboBox();
             this.txtCity = new System.Windows.Forms.ComboBox();
+            this.cbCity = new System.Windows.Forms.ComboBox();
+            this.cbCountry = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dvgMembers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,6 +80,7 @@
             // 
             // dvgMembers
             // 
+            this.dvgMembers.AllowUserToOrderColumns = true;
             this.dvgMembers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvgMembers.Location = new System.Drawing.Point(12, 289);
             this.dvgMembers.Name = "dvgMembers";
@@ -185,7 +188,7 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(294, 255);
+            this.btnSearch.Location = new System.Drawing.Point(608, 253);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(94, 29);
             this.btnSearch.TabIndex = 22;
@@ -197,7 +200,8 @@
             // 
             this.txtCountry.FormattingEnabled = true;
             this.txtCountry.Items.AddRange(new object[] {
-            "Vietnam"});
+            "Vietnam",
+            "China"});
             this.txtCountry.Location = new System.Drawing.Point(525, 77);
             this.txtCountry.Name = "txtCountry";
             this.txtCountry.Size = new System.Drawing.Size(252, 28);
@@ -216,11 +220,37 @@
             this.txtCity.Size = new System.Drawing.Size(252, 28);
             this.txtCity.TabIndex = 24;
             // 
+            // cbCity
+            // 
+            this.cbCity.FormattingEnabled = true;
+            this.cbCity.Items.AddRange(new object[] {
+            "Hochiminh",
+            "Hanoi",
+            "Danang",
+            "Camau"});
+            this.cbCity.Location = new System.Drawing.Point(294, 255);
+            this.cbCity.Name = "cbCity";
+            this.cbCity.Size = new System.Drawing.Size(151, 28);
+            this.cbCity.TabIndex = 25;
+            // 
+            // cbCountry
+            // 
+            this.cbCountry.FormattingEnabled = true;
+            this.cbCountry.Items.AddRange(new object[] {
+            "Vietnam",
+            "China"});
+            this.cbCountry.Location = new System.Drawing.Point(451, 254);
+            this.cbCountry.Name = "cbCountry";
+            this.cbCountry.Size = new System.Drawing.Size(151, 28);
+            this.cbCountry.TabIndex = 26;
+            // 
             // frmMemberManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(789, 565);
+            this.Controls.Add(this.cbCountry);
+            this.Controls.Add(this.cbCity);
             this.Controls.Add(this.txtCity);
             this.Controls.Add(this.txtCountry);
             this.Controls.Add(this.btnSearch);
@@ -268,5 +298,7 @@
         private Button btnSearch;
         private ComboBox txtCountry;
         private ComboBox txtCity;
+        private ComboBox cbCity;
+        private ComboBox cbCountry;
     }
 }

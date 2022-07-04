@@ -37,14 +37,14 @@
             this.txtMemberName = new System.Windows.Forms.TextBox();
             this.txtConfirmPassword = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.txtCity = new System.Windows.Forms.TextBox();
-            this.txtCountry = new System.Windows.Forms.TextBox();
             this.btnCreate = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lbErrorName = new System.Windows.Forms.Label();
             this.lbErrorPass = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.txtCity = new System.Windows.Forms.ComboBox();
+            this.txtCountry = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -125,20 +125,6 @@
             this.txtPassword.Size = new System.Drawing.Size(305, 27);
             this.txtPassword.TabIndex = 8;
             // 
-            // txtCity
-            // 
-            this.txtCity.Location = new System.Drawing.Point(145, 295);
-            this.txtCity.Name = "txtCity";
-            this.txtCity.Size = new System.Drawing.Size(305, 27);
-            this.txtCity.TabIndex = 9;
-            // 
-            // txtCountry
-            // 
-            this.txtCountry.Location = new System.Drawing.Point(148, 345);
-            this.txtCountry.Name = "txtCountry";
-            this.txtCountry.Size = new System.Drawing.Size(305, 27);
-            this.txtCountry.TabIndex = 10;
-            // 
             // btnCreate
             // 
             this.btnCreate.BackColor = System.Drawing.SystemColors.MenuHighlight;
@@ -197,19 +183,43 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // txtCity
+            // 
+            this.txtCity.FormattingEnabled = true;
+            this.txtCity.Items.AddRange(new object[] {
+            "Hochiminh",
+            "Hanoi",
+            "Danang",
+            "Camau"});
+            this.txtCity.Location = new System.Drawing.Point(145, 295);
+            this.txtCity.Name = "txtCity";
+            this.txtCity.Size = new System.Drawing.Size(305, 28);
+            this.txtCity.TabIndex = 17;
+            // 
+            // txtCountry
+            // 
+            this.txtCountry.FormattingEnabled = true;
+            this.txtCountry.Items.AddRange(new object[] {
+            "Vietnam",
+            "China"});
+            this.txtCountry.Location = new System.Drawing.Point(145, 345);
+            this.txtCountry.Name = "txtCountry";
+            this.txtCountry.Size = new System.Drawing.Size(305, 28);
+            this.txtCountry.TabIndex = 18;
+            // 
             // CreateMember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(462, 441);
+            this.Controls.Add(this.txtCountry);
+            this.Controls.Add(this.txtCity);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.lbErrorPass);
             this.Controls.Add(this.lbErrorName);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnCreate);
-            this.Controls.Add(this.txtCountry);
-            this.Controls.Add(this.txtCity);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtConfirmPassword);
             this.Controls.Add(this.txtMemberName);
@@ -238,13 +248,13 @@
         private TextBox txtMemberName;
         private TextBox txtConfirmPassword;
         private TextBox txtPassword;
-        private TextBox txtCity;
-        private TextBox txtCountry;
         private Button btnCreate;
         private Label label7;
         private TextBox txtEmail;
         private Label lbErrorName;
         private Label lbErrorPass;
         private Button btnCancel;
+        private ComboBox txtCity;
+        private ComboBox txtCountry;
     }
 }
